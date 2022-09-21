@@ -1,6 +1,10 @@
 package com.hackunamatata.mrbs.boLayer;
 
+import com.hackunamatata.mrbs.model.MeetingRoom;
 import com.hackunamatata.mrbs.model.User;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AdminImplementsBO implements InterfaceBO{
     @Override
@@ -22,4 +26,29 @@ public class AdminImplementsBO implements InterfaceBO{
     public String addUserstoSystem(User u) {
         return null;
     }
+
+    public List<MeetingRoom> getMeetingRooms() {
+        return null;
+    }
+
+
+    public String addMeetingRoom(MeetingRoom m) {
+        return null;
+    }
+
+    public String editMeetingRoom(MeetingRoom m) {
+        return null;
+    }
+
+
+    public String deleteMeetingRoom(MeetingRoom m) {
+        return null;
+    }
+
+
+    public String CreditAmenities(MeetingRoom m) {
+        return null;
+    }
+
+
 }

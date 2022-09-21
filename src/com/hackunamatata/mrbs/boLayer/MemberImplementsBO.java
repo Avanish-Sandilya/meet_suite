@@ -1,5 +1,6 @@
 package com.hackunamatata.mrbs.boLayer;
 
+import com.hackunamatata.mrbs.model.Meeting;
 import com.hackunamatata.mrbs.model.User;
 
 public class MemberImplementsBO implements InterfaceBO{
@@ -20,6 +21,10 @@ public class MemberImplementsBO implements InterfaceBO{
 
     @Override
     public String addUserstoSystem(User u) {
+        return null;
+    }
+
+    public Meeting memberSchedule() {
         return null;
     }
 }

@@ -1,5 +1,6 @@
 package com.hackunamatata.mrbs.daoLayer;
 
+import com.hackunamatata.mrbs.model.Meeting;
 import com.hackunamatata.mrbs.model.User;
 
 public class MemberImplementsDAO implements InterfaceDAO{
@@ -20,6 +21,10 @@ public class MemberImplementsDAO implements InterfaceDAO{
 
     @Override
     public String addUserstoSystem(User u) {
+        return null;
+    }
+
+    public Meeting memberSchedule() {
         return null;
     }
 }

@@ -1,6 +1,9 @@
 package com.hackunamatata.mrbs.daoLayer;
 
+import com.hackunamatata.mrbs.model.MeetingRoom;
 import com.hackunamatata.mrbs.model.User;
+
+import java.util.List;
 
 public class AdminImplementsDAO implements InterfaceDAO{
     @Override
@@ -20,6 +23,28 @@ public class AdminImplementsDAO implements InterfaceDAO{
 
     @Override
     public String addUserstoSystem(User u) {
+        return null;
+    }
+
+
+    public List<MeetingRoom> getMeetingRooms() {
+        return null;
+    }
+
+
+    public String addMeetingRoom(MeetingRoom m) {
+        return null;
+    }
+
+    public String editMeetingRoom(MeetingRoom m) {
+        return null;
+    }
+
+    public String deleteMeetingRoom(MeetingRoom m) {
+        return null;
+    }
+
+    public String CreditAmenities(MeetingRoom m) {
         return null;
     }
 }
