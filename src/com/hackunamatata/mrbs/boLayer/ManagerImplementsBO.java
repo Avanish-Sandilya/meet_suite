@@ -1,54 +1,69 @@
 package com.hackunamatata.mrbs.boLayer;
 
+import com.hackunamatata.mrbs.daoLayer.ManagerImplementsDAO;
 import com.hackunamatata.mrbs.model.BookingInformation;
 import com.hackunamatata.mrbs.model.Meeting;
 import com.hackunamatata.mrbs.model.MeetingRoom;
 import com.hackunamatata.mrbs.model.User;
 
+import java.sql.SQLException;
+
 public class ManagerImplementsBO implements InterfaceBO{
     @Override
     public User getUserDetails(int id) {
-        return null;
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.getUserDetails(id);
+
     }
 
     @Override
     public double getUserCredits(User u) {
-        return 0;
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.getUserCredits(u);
     }
 
     @Override
     public String updateUserCredits(User u, double crd) {
-        return null;
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.updateUserCredits(u,crd);
     }
 
     @Override
-    public String addUserstoSystem(User u) {
-        return null;
+    public String addUserstoSystem(User u) throws SQLException {
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.addUserstoSystem(u);
     }
 
 
-    public String createMeeting() {
-        return null;
+    public String createMeeting(Meeting m) throws SQLException {
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.createMeeting(m);
+
     }
 
 
     public String editMeeting(Meeting m) {
-        return null;
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.editMeeting(m);
     }
 
 
     public String deleteMeeting(Meeting m) {
-        return null;
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.deleteMeeting(m);
     }
 
 
     public BookingInformation AvailableRoom() {
-        return null;
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.AvailableRoom();
     }
 
 
     public String resetManagerCredits() {
-        return null;
+        ManagerImplementsDAO mdo = new ManagerImplementsDAO();
+        return mdo.resetManagerCredits();
+
     }
 
 

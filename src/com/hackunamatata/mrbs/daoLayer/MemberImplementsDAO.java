@@ -23,8 +23,8 @@ public class MemberImplementsDAO implements InterfaceDAO{
     public String addUserstoSystem(User u) {
         return null;
     }
-
+/*
     public Meeting memberSchedule() {
         return null;
-    }
+    }*/
 }

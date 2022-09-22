@@ -1,6 +1,7 @@
 package com.hackunamatata.mrbs.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class Meeting {
     private int meetingId;
@@ -9,20 +10,21 @@ public class Meeting {
     private Date meetingDate;
     private Date startTime;
     private Date endTime;
-    private String membersList;
-    private String meetingRoomInfo;
+    private List<User> usersList;
+    private List<Meeting> meetingRoomInfo;
 //    private enum meetingType{
 //
 //    }
 
-    public Meeting(int meetingId, String title, int orgBy, Date meetingDate, Date startTime, Date endTime, String membersList, String meetingRoomInfo) {
+
+    public Meeting(int meetingId, String title, int orgBy, Date meetingDate, Date startTime, Date endTime, List<User> usersList, List<Meeting> meetingRoomInfo) {
         this.meetingId = meetingId;
         this.title = title;
         this.orgBy = orgBy;
         this.meetingDate = meetingDate;
         this.startTime = startTime;
         this.endTime = endTime;
-        this.membersList = membersList;
+        this.usersList = usersList;
         this.meetingRoomInfo = meetingRoomInfo;
     }
 
@@ -68,17 +70,17 @@ public class Meeting {
         this.endTime = endTime;
     }
 
-    public String getMembersList() {
-        return membersList;
+    public List<User> getUsersList() {
+        return usersList;
     }
-    public void setMembersList(String membersList) {
-        this.membersList = membersList;
+    public void setUsersList(List<User> usersList) {
+        this.usersList = usersList;
     }
 
-    public String getMeetingRoomInfo() {
+    public List<Meeting> getMeetingRoomInfo() {
         return meetingRoomInfo;
     }
-    public void setMeetingRoomInfo(String meetingRoomInfo) {
+    public void setMeetingRoomInfo(List<Meeting> meetingRoomInfo) {
         this.meetingRoomInfo = meetingRoomInfo;
     }
 }
