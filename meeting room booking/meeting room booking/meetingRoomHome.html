@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>Meet Suite</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top opacity-50 fw-bold" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="header">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Import Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text-center" id="first_grid">
+              <span class="line">/</span>Meet Suite<span class="line">/</span><br>
+              <p>Your go to place to create, organize and manage your meets with a customized touch</p>
+
+        </div>
+          <div class="col text-right">
+              <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+          </div>
+          <div class="col">
+            <img src="https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+          </div>
+          <div class="col text-left" id="second_grid">
+              <h3>MEETING TYPES</h3>
+              <button type="button" class="btn btn-lg btn-dark myButton" data-bs-toggle="popover" data-bs-title="Mandatory Amenities" data-bs-content="Whiteboard,Projector">Classroom Training</button><br>
+              <button type="button" class="btn btn-lg btn-dark myButton" data-bs-toggle="popover" data-bs-title="Mandatory Amenities" data-bs-content="WiFi,Projector">Online Training</button><br>
+              <button type="button" class="btn btn-lg btn-dark myButton" data-bs-toggle="popover" data-bs-title="Mandatory Amenities" data-bs-content="Conference call essentials">Conference Call</button><br>
+              <button type="button" class="btn btn-lg btn-dark myButton" data-bs-toggle="popover" data-bs-title="Mandatory Amenities" data-bs-content="Projector">Business</button><br>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text-center" id="second_grid">
+            <h3>Room Details</h3>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a href=""><button class="btn btn-dark myButton" type="button">Alpha Room</button></a>
+              <a href=""><button class="btn btn-dark myButton" type="button">Beta Room</button></a>
+              <a href=""><button class="btn btn-dark myButton" type="button">Charlie Room</button></a>
+              <a href=""><button class="btn btn-dark myButton" type="button">Delta Room</button></a>
+              <a href=""><button class="btn btn-dark myButton" type="button">Echo Room</button></a>
+            </div>
+          </div>
+          <div class="col">
+            <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+<script>const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))</script> 
+    </body>
+
+</html>
